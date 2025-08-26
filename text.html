@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="pricing-options">
+  <label>
+    <input type="radio" name="price" value="2000" checked>
+    $20.00
+  </label>
+  <label>
+      <input type="radio" name="price" value="5000">
+      $50.00
+    </label>
+</div>
+
+<form id="payment-form">
+  <div id="payment-element"><!-- Stripe element will load here --></div>
+  <button id="submit">Pay</button>
+  <div id="error-message"></div>
+</form>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    // Stripe test publishable key
+    const stripe = Stripe("pk_test_51JOrbwBWw6F3WvjlH1udqMDMTdJYlvM91nDSLsazv0uhjfLyjxDojlc4l9O8dB9N8XgV1eOHhgkxTF7g5HJQeor600a9839dOV");
+    
+    // ❌ Fake client_secret for demo only
+    // (Designer: do not worry, this won’t work for real payments)
+  const clientSecret = "pi_123456789_secret_abcdef";
+  
+  const elements = stripe.elements({ clientSecret });
+  const paymentElement = elements.create("payment");
+  paymentElement.mount("#payment-element");
+  
+  document.querySelector("#payment-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Designer demo only — no real payment submitted!");
+    });
+</script>
+</body>
+</html>
