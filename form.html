@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipping-form</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<section class="tip-system rounded-4 overflow-hidden mt-4 shadow-sm position-relative">
+    <header>
+        <div class="heading text-center">
+            <h1 class="mb-0">Janet</h1>
+            <p class="mb-0">Waiter</p>
+        </div>
+        <div class="logo rounded-circle overflow-hidden border border-2 border-dark shadow-lg">
+            <img src="./assets/images/staff1.png" width="100%" height="100%" alt="">
+        </div>
+        <span class="small px-1 shadow-sm rounded-pill rating">
+          <i class="fa-solid fa-star"></i> 4.8
+        </span>
+    </header>
+
+<section class="tip-form mt-5 pt-4 px-3 d-flex flex-wrap justify-content-between">
+  <div class="box">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+  <label class="btn " for="btnradio1">$5</label>
+  </div>
+  <div class="box">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn" for="btnradio2">$10</label>
+  </div>
+  <div class="box">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn " for="btnradio3">$15</label>
+  </div>
+  <div class="box">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+  <label class="btn " for="btnradio4">$20</label>
+  </div>
+  <div class="box">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+  <label class="btn" for="btnradio5">$25</label>
+  </div>
+  <div class="box">
+    <input type="radio" class="btn-check" name="btnradio" id="custombtn" autocomplete="off">
+  <label class="btn custom-btn d-flex align-items-center justify-content-center" for="custombtn"><i class="fa-solid fa-ellipsis fs-1"></i></label>
+  </div>
+<div class="custom-form w-100 shadow-sm p-3 rounded-3 mx-2" style="display: none;">
+  <label for="customAmount" class="small mb-1">Write Custom Amount</label>
+  <input id="customAmount" name="customAmount" type="number" placeholder="Amount" class="form-control w-100">
+</div>
+<div class="d-flex gap-2 align-items-center rating-sec px-2 mt-3">
+  <p>Rating :</p>
+  <p class="d-flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+</div>
+</section>
+
+<div class="button-sec form-button py-2">
+    <a href="../form.html" class="primary-btn rounded-pill px-4 border-0 py-2">Proceed to Pay</a>
+</div>
+</section>
+
+    <script src="./assets/javascript/javascript.js"></script>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>

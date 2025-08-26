@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* light theme styles */
+:root {
+  --primary: #ff7e5f;
+  --secondary: #feb47b;
+  --lightsecondary: #6d5d6e;
+  --light: #f4eee0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.primary-btn {
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+
+.secondary-bg {
+  background-color: var(--secondary);
+}
+
+.primary-color {
+  color: var(--primary) !important;
+}
+
+.secondary-color {
+  color: var(--secondary);
+}
+
+body {
+  font-family: "Outfit", sans-serif !important;
+  background-color: #fffaf5 !important;
+}
+
+.tip-system {
+  max-width: 500px;
+  height: 650px;
+  margin: 0 auto;
+  background-color: #fff8f8;
+  border: 2px solid var(--primary);
+}
+.tip-system header {
+  background: url(../images/hero-img.jpg) no-repeat bottom center;
+  height: 150px;
+  position: relative;
+}
+.tip-system header .heading {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+  color: #ffffff;
+}
+.tip-system header .logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  bottom: -50px;
+  transform: translateX(-50%);
+}
+.tip-system header .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tip-system header .rating {
+  background-color: #ffffff;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.tip-system header .rating i {
+  color: rgb(255, 170, 0);
+}
+.tip-system .staff {
+  height: 450px;
+  overflow-y: auto;
+  padding-bottom: 3rem;
+}
+.tip-system .staff-box {
+  position: relative;
+  flex: 0 1 31%;
+  margin-bottom: 1rem;
+  /* Hover effect */
+  /* Selected (checked) styles */
+}
+.tip-system .staff-box input[type=radio] {
+  display: none;
+}
+.tip-system .staff-box .staff-label {
+  display: block;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.tip-system .staff-box .staff-label img {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  border-radius: 1rem;
+}
+.tip-system .staff-box .staff-label p {
+  margin: 0.25rem 0;
+  font-weight: 600;
+}
+.tip-system .staff-box .staff-label span {
+  position: absolute;
+  right: 12px;
+  bottom: 36px;
+  background-color: #ffffff;
+}
+.tip-system .staff-box .staff-label span i {
+  color: rgb(255, 153, 0);
+}
+.tip-system .staff-box .staff-label:hover {
+  transform: translateY(-3px);
+  border-color: #ddd;
+}
+.tip-system .staff-box input[type=radio]:checked + .staff-label {
+  border-color: var(--primary);
+  background: linear-gradient(135deg, var(--light), var(--secondary));
+  box-shadow: 0 6px 18px rgba(255, 217, 128, 0.25);
+  transform: translateY(-4px);
+}
+.tip-system .staff-box input[type=radio]:checked + .staff-label span {
+  background: #2563eb;
+  color: #fff;
+}
+.tip-system .button-sec {
+  background-color: rgba(255, 255, 255, 0.2705882353);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s all;
+}
+.tip-system .button-sec.active {
+  bottom: 6px;
+}
+
+.tip-form .box {
+  position: relative;
+  flex: 1 1 29%;
+  margin: 0.5rem;
+}
+.tip-form .box input[type=radio]:checked + label {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+.tip-form .box label {
+  width: 100%;
+  height: 52px;
+  padding: 15px;
+  background-color: var(--light);
+  border: 1px solid var(--secondary);
+}
+.tip-form .box .btn:hover {
+  background: var(--light);
+}
+.tip-form .custom-btn {
+  background: var(--light);
+  border: 1px solid var(--secondary);
+  width: 100%;
+  padding: 6px !important;
+  transition: 0.3s all;
+}
+.tip-form .custom-btn:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+.tip-form .custom-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+.tip-form .custom-form {
+  background-color: #ffffff;
+}
+.tip-form .custom-form input {
+  border-color: var(--secondary);
+  transition: 0.3s all;
+}
+.tip-form .custom-form input:focus {
+  box-shadow: 0px 3px 0px rgba(254, 180, 123, 0.4941176471);
+}
+
+.form-button {
+  bottom: 8px !important;
+}
+
+.rating-sec i {
+  color: rgb(255, 170, 0);
+}/*# sourceMappingURL=style.css.map */
