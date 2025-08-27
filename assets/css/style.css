@@ -73,29 +73,13 @@ body {
   flex-direction: column;
   overflow: hidden;
 }
-.tip-system header {
-  background: url(../images/hero-img.jpg) no-repeat bottom center;
-  height: 130px;
-  position: relative;
-}
-.tip-system header .heading {
-  position: absolute;
-  left: 50%;
-  bottom: 60px;
-  transform: translateX(-50%);
-  color: #ffffff;
-}
 .tip-system header .logo {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 50%;
-  bottom: -50px;
-  transform: translateX(-50%);
+  width: 150px;
+  height: 60px;
 }
 .tip-system header .logo img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .tip-system header .rating {
   background-color: #ffffff;
@@ -106,15 +90,29 @@ body {
 .tip-system header .rating i {
   color: rgb(255, 170, 0);
 }
+.tip-system header .profile-pic {
+  width: 100px;
+  height: 100px;
+}
+.tip-system header .profile-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .tip-system .staff {
   overflow-y: auto;
 }
 .tip-system .staff-box {
+  width: 150px;
   position: relative;
   flex: 0 1 31%;
   margin-bottom: 1rem;
   /* Hover effect */
   /* Selected (checked) styles */
+}
+.tip-system .staff-box .designation {
+  font-size: 0.6rem;
 }
 .tip-system .staff-box input[type=radio] {
   display: none;
@@ -128,25 +126,21 @@ body {
   cursor: pointer;
   transition: all 0.25s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .tip-system .staff-box .staff-label img {
-  width: 100%;
-  max-width: 150px;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   border-radius: 1rem;
 }
 .tip-system .staff-box .staff-label p {
   margin: 0.25rem 0;
   font-weight: 600;
-}
-.tip-system .staff-box .staff-label span {
-  position: absolute;
-  right: 12px;
-  bottom: 36px;
-  background-color: #ffffff;
-}
-.tip-system .staff-box .staff-label span i {
-  color: rgb(255, 153, 0);
 }
 .tip-system .staff-box .staff-label:hover {
   border-color: #ddd;
@@ -155,10 +149,6 @@ body {
   border-color: var(--primary);
   background: linear-gradient(135deg, var(--light), var(--secondary));
   box-shadow: 0 6px 18px rgba(255, 217, 128, 0.25);
-}
-.tip-system .staff-box input[type=radio]:checked + .staff-label span {
-  background: #2563eb;
-  color: #fff;
 }
 .tip-system .button-sec {
   -webkit-backdrop-filter: blur(6px);
@@ -173,7 +163,7 @@ body {
 
 .tip-form .box {
   position: relative;
-  flex: 1 1 29%;
+  flex: 1 1 20%;
   margin: 0.5rem;
 }
 .tip-form .box input[type=radio]:checked + label {
@@ -181,10 +171,12 @@ body {
 }
 .tip-form .box label {
   width: 100%;
-  height: 52px;
+  height: 65px;
   padding: 15px;
   background-color: var(--light);
   border: 1px solid var(--secondary);
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 .tip-form .box .btn:hover {
   background: var(--light);
@@ -208,6 +200,7 @@ body {
 .tip-form .custom-form input {
   border-color: var(--secondary);
   transition: 0.3s all;
+  font-size: 1.2rem;
 }
 .tip-form .custom-form input:focus {
   box-shadow: 0px 3px 0px rgba(254, 180, 123, 0.4941176471);
@@ -222,4 +215,21 @@ body {
 
 .rating-sec i {
   color: rgb(255, 170, 0);
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  cursor: grab;
+}
+
+.marquee:active {
+  cursor: grabbing;
+}
+
+.marquee-content {
+  display: inline-flex;
+  will-change: transform;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

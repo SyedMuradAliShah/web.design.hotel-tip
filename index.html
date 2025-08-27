@@ -12,107 +12,92 @@
 <body>
 <section class="tip-system rounded-4 mt-1 shadow-sm position-relative ">
     <header>
-        <div class="heading text-center w-100">
-            <h1 class="mb-0 fs-4">Tipping Made Simple</h1>
-            <p class="mb-0">Tim Hortons</p>
+      <div class="logo rounded-3 overflow-hidden mx-auto mt-3">
+        <img src="./assets/images/logo.png" width="100%" height="100%" alt="">
+    </div>
+      <div class="text-center mt-3">
+        <div class="profile-pic rounded-circle overflow-hidden mx-auto">
+          <img src="./assets/images/staff1.png" alt="">
         </div>
-        <div class="logo rounded-circle overflow-hidden border border-2 border-dark shadow-lg">
-            <img src="./assets/images/logo.png" width="100%" height="100%" alt="">
-        </div>
+          <h1 class="mb-0 fs-3">Maria</h1>
+      </div>
+      </div>
     </header>
-
-<section class="staff mt-5 pt-4 px-3">
-  
-  <div class="staff-item">
-    <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-            <!-- Staff 1 -->
+<div class="staff mt-3 px-3 marquee" id="marquee">
+  <div class="marquee-content" id="marquee-content">
+    
     <div class="staff-box">
       <input type="radio" name="staff" id="staff1" value="Janet">
       <label for="staff1" class="staff-label">
         <img src="./assets/images/staff1.png" class="rounded-4 overflow-hidden" alt="">
-        <p class="mb-0 small fw-semibold text-center">Janet</p>
-        <span class="small px-1 shadow-sm rounded-pill">
-          <i class="fa-solid fa-star"></i> 4.8
-        </span>
+        <div>
+          <p class="mb-0 small fw-semibold">Janet</p>
+          <p class="mb-0 small designation">Waiter</p>
+        </div>
       </label>
     </div>
-      </div>
-      <div class="swiper-slide">
-            <!-- Staff 2 -->
+
     <div class="staff-box">
-      <input type="radio" name="staff" id="staff2" value="Alex">
+      <input type="radio" name="staff" id="staff2" value="Maria" checked>
       <label for="staff2" class="staff-label">
         <img src="./assets/images/staff2.png" class="rounded-4 overflow-hidden" alt="">
-        <p class="mb-0 small fw-semibold text-center">Alex</p>
-        <span class="small px-1 shadow-sm rounded-pill">
-          <i class="fa-solid fa-star"></i> 4.9
-        </span>
+        <div>
+          <p class="mb-0 small fw-semibold">Maria</p>
+          <p class="mb-0 small designation">Manager</p>
+        </div>
       </label>
     </div>
-      </div>
-      <div class="swiper-slide">
-            <!-- Staff 3 -->
+
     <div class="staff-box">
-      <input type="radio" name="staff" id="staff3" value="Maria">
+      <input type="radio" name="staff" id="staff3" value="Alexa">
       <label for="staff3" class="staff-label">
         <img src="./assets/images/staff3.png" class="rounded-4 overflow-hidden" alt="">
-        <p class="mb-0 small fw-semibold text-center">Maria</p>
-        <span class="small px-1 shadow-sm rounded-pill">
-          <i class="fa-solid fa-star"></i> 4.7
-        </span>
+        <div>
+          <p class="mb-0 small fw-semibold">Alexa</p>
+          <p class="mb-0 small designation">Housekeeper</p>
+        </div>
       </label>
     </div>
-      </div>
-      <div class="swiper-slide">
-            <!-- Staff 4 -->
+
     <div class="staff-box">
-      <input type="radio" name="staff" id="staff4" value="Maria">
+      <input type="radio" name="staff" id="staff4" value="Soneya">
       <label for="staff4" class="staff-label">
         <img src="./assets/images/staff4.png" class="rounded-4 overflow-hidden" alt="">
-        <p class="mb-0 small fw-semibold text-center">Maria</p>
-        <span class="small px-1 shadow-sm rounded-pill">
-          <i class="fa-solid fa-star"></i> 4.7
-        </span>
+        <div>
+          <p class="mb-0 small fw-semibold">Soneya</p>
+          <p class="mb-0 small designation">CEO</p>
+        </div>
       </label>
     </div>
-      </div>
-      <div class="swiper-slide">
-            <!-- Staff 5 -->
+
     <div class="staff-box">
-      <input type="radio" name="staff" id="staff5" value="Maria">
+      <input type="radio" name="staff" id="staff5" value="Malisa">
       <label for="staff5" class="staff-label">
         <img src="./assets/images/staff5.png" class="rounded-4 overflow-hidden" alt="">
-        <p class="mb-0 small fw-semibold text-center">Maria</p>
-        <span class="small px-1 shadow-sm rounded-pill">
-          <i class="fa-solid fa-star"></i> 4.7
-        </span>
+        <div>
+          <p class="mb-0 small fw-semibold">Malisa</p>
+          <p class="mb-0 small designation">Cleaner</p>
+        </div>
       </label>
     </div>
-      </div>
-      <div class="swiper-slide">
-            <!-- Staff 6 -->
+
     <div class="staff-box">
-      <input type="radio" name="staff" id="staff6" value="Maria">
+      <input type="radio" name="staff" id="staff6" value="Sara">
       <label for="staff6" class="staff-label">
         <img src="./assets/images/staff6.png" class="rounded-4 overflow-hidden" alt="">
-        <p class="mb-0 small fw-semibold text-center">Maria</p>
-        <span class="small px-1 shadow-sm rounded-pill">
-          <i class="fa-solid fa-star"></i> 4.7
-        </span>
+        <div>
+          <p class="mb-0 small fw-semibold">Sara</p>
+          <p class="mb-0 small designation">Receptionist</p>
+        </div>
       </label>
     </div>
-      </div>
-    </div>
 
   </div>
-    
-  </div>
-</section>
+</div>
 
-<section class="tip-form  px-3 d-flex flex-wrap justify-content-between">
+
+
+<section class="tip-form  px-2 d-flex flex-wrap justify-content-between">
   <div class="box">
     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
   <label class="btn " for="btnradio1">$5</label>
@@ -142,16 +127,19 @@
     <label for="customAmount" class="small mb-1">Write Custom Amount</label>
     <button class="check primary-btn small border-0 rounded-2 py-1 px-2 " ><i class="fa-solid fa-check"></i></button>
   </div>
-  <input id="customAmount" name="customAmount" type="number" placeholder="Amount" class="form-control w-100">
+  <div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <input id="customAmount" name="customAmount" type="number" placeholder="Amount" class="form-control" aria-label="Amount">
+    
+  </div>
 </div>
-<div class="d-flex gap-2 align-items-center rating-sec px-2 mt-3">
-  <p>Rating :</p>
-  <p class="d-flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-</div>
+
 </section>
-<div class="button-sec py-2 ">
-    <button class="primary-btn d-inline-block small rounded-pill px-4 border-0 py-2">Proceed to Pay</button>
+<div class="button-sec py-2 px-3">
+    <button class="secondary-btn d-inline-block rounded-2 px-4 py-2 w-100 shadow-sm border border-1 border-dark">Pay with <img src="./assets/images/gpay.png" width="40px" alt=""></button>
+    <button class="primary-btn d-inline-block rounded-2 px-4 border-0 py-2 w-100 mt-3">Pay with credit card</button>
 </div>
+<p class="px-3 small">By continuing, you confirm that you agree to Tim Hortons Terms and Privacy Policy</p>
 </section>
 
     <script src="./assets/javascript/swiper.min.js"></script>
